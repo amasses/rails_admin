@@ -18,7 +18,7 @@ Rails_admin works with devise. Checking for a current installation of devise!
       copy_locales_files
 
       puts "Also you need a new migration. We'll generate it for you now."
-      invoke 'rails_admin:install_migrations'
+      invoke 'model', ["History message:string username:string item:integer table:string month:integer year:integer"]
     end
 
     private
